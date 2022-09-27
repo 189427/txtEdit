@@ -1,10 +1,6 @@
-const path = require("path");
-const express = require("express");
-const app = express();
+const path = require('path');
 
 module.exports = (app) =>
-  app.get("/", (req, res) =>
-    res.sendFile(path.join(__dirname, "../../client/index.html"))
+  app.get('/', (req, res) =>
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'))
   );
-
-app.use(express.static("../server.js"));
