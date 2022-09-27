@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "description": "Just Another Text Editor",
   "main": "server.js",
-  "engines": {
-    "node": "17.x",
-    "npm": "8.11.0"
-  },
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "cd client npm install --production=false",
+    "install": "cd client npm install",
     "client": "cd client && npm start"
   },
   "keywords": [],
@@ -21,8 +17,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "serve": "^13.0.2",
-    "workbox-webpack-plugin": "^6.5.4"
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
