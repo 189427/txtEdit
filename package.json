@@ -4,7 +4,7 @@
   "description": "Just Another Text Editor",
   "main": "server.js",
   "engines": {
-    "node": "16.5.1"
+    "node": "16x"
   },
 
   "heroku-prebuild": "npm install --dev",
