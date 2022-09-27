@@ -33,14 +33,14 @@ module.exports = () => {
         short_name: "J.A.T.E.",
         description:
           "This application installs 'Just Another Text Editor' or 'JATE' for short.",
-        background_color: "#245ca3",
-        theme_color: "#224ca3",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
         start_url: "/",
         publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
-            sizes: [96, 128, 192, 256],
+            sizes: [96, 128, 192, 256, 384, 512], //Various image sizes
             destination: path.join("assets", "icons"),
           },
         ],
