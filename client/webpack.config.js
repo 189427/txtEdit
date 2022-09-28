@@ -18,11 +18,15 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      HTMLWebpackPlugin({
+        template: './index.html',
+        title: 'jate'
+      }),
       
     ],
 
     module: {
-      rules: [
+      rules: ['style-loader', 'css-loader'],
         
       ],
     },
