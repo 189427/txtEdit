@@ -1,7 +1,7 @@
 
 # Text Editor
 
-An online texteditor that can be downloaded via PWA protocol. After 10+ hours of troubleshooting, I was finally able to get the app to deploy on heroku.  
+An online texteditor that can be downloaded via PWA protocol. After 10+ hours of troubleshooting and nearly 50 commits, I was finally able to get the app to deploy on heroku.  
 
 
 
